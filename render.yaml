@@ -5,11 +5,11 @@ services:
   healthCheckPath: /
   envVars:
   - key: RABBITMQ_ERLANG_COOKIE
-    generateValue: true
+    value: rH2fGmRGjEOFWdOF9PYZWAWp92TTs0Z+sQtCJinH
   - key: RABBITMQ_DEFAULT_USER
     value: snowcore
   - key: RABBITMQ_DEFAULT_PASS
-    generateValue: true
+    value: snowcore@2026#
   disk:
     name: rabbitmq
     mountPath: /var/lib/rabbitmq
