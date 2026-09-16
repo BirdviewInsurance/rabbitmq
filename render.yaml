@@ -2,11 +2,12 @@ services:
 - type: web
   name: rabbitmq
   env: docker
+  healthCheckPath: /
   envVars:
   - key: RABBITMQ_ERLANG_COOKIE
     generateValue: true
   - key: RABBITMQ_DEFAULT_USER
-    value: rabbitmq
+    value: snowcore
   - key: RABBITMQ_DEFAULT_PASS
     generateValue: true
   disk:
