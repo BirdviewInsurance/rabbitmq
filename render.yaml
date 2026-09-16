@@ -12,5 +12,5 @@ services:
     value: snowcore@2026#
   disk:
     name: rabbitmq
-    mountPath: /var/lib/rabbitmq
+    mountPath: /var/lib/rabbitmq/mnesia
     sizeGB: 10
